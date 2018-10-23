@@ -11,8 +11,7 @@ def pred_features (adj):
     shuffle(graph)
     graph_copy = graph
     length = math.floor(len(graph)/20)
-    precision=0
-    i=0
+    precision, i = 0, 0
     auc = 0
     while i < len(graph):
         print ("\nIteration : " ,math.floor(i/length))
